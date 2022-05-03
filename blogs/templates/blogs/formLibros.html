@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+
+{% block contenido%}
+<h2>Libros</h2>
+
+<form method="POST" action="" style="display: flex; flex-direction: column; max-width: 60vh; margin-inline: auto;">
+
+    {% csrf_token %}
+
+    {{form}}
+
+    <input type="submit" value="Enviar">
+
+</form>
+{% endblock contenido%}
